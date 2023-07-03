@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Employee } from './employee';
 import { EmployeeService } from './employee.service';
 import { HttpErrorResponse } from '@angular/common/http';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,12 @@ export class AppComponent implements OnInit {
       }
     )
   }
+
+
+  public onAddEmployee(addForm: NgForm): void {
+    
+  }
+
 
 
   public onOpenModal(employee: Employee | null, mode: string): void {
